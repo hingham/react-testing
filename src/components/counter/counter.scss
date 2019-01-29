@@ -1,0 +1,26 @@
+.counter {
+  height: 20px;
+  width: 20px;
+  color: rgb(87, 87, 87);
+}
+
+.counter {
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+  font-size: 3em;
+}
+
+#left {
+  grid-column: 1;
+}
+
+#right {
+  grid-column: 3;
+}
+
+#left,
+#right {
+  margin: 2em;
+  width: 1em;
+  background: white;
+}

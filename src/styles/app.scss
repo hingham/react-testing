@@ -1,0 +1,29 @@
+$background: rgb(241, 241, 241);
+$color: rgb(192, 79, 79);
+
+body,
+html {
+  height: 100%;
+}
+
+#root {
+  background-color: $background;
+  display: grid;
+  grid-template-rows: 1fr 50% 1fr;
+}
+
+footer {
+  background-color: green;
+  grid-row: 3;
+}
+
+.counter {
+  grid-row: 2;
+  width: 100%;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
