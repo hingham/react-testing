@@ -40,6 +40,7 @@ class Counter extends React.Component {
           -
         </a>
         <span className={classes}>{this.state.count}</span>
+        <p>hello</p>
         <a
           href="#"
           id="right"

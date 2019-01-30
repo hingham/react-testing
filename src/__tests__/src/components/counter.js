@@ -1,8 +1,7 @@
 import React from "react";
-// import "../../../setupTests.js";
 
 import renderer from "react-test-renderer";
-import Counter from "../../../src/components/counter/counter";
+import Counter from "../../../components/counter/counter.js";
 
 describe("<Counter />", () => {
   it("is alive", () => {
@@ -24,4 +23,10 @@ describe("<Counter />", () => {
     expect(component.state("count")).toBe(-1);
     expect(component.find("span").text()).toContain("1");
   });
+
+  it('renders correctly', ()=>{
+    const tree = renderer.create(<Counter/>).toJSON();
+    expect(tree).toMatchSnapshot();
+    })
+
 });
