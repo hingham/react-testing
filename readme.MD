@@ -27,4 +27,4 @@ Create a new bucket. Drop files into the bucket. Make the bucket public to every
 * Assertions: clicking on link triggers - 
 
 ### uml
-![image](./3667.JPG)
+![image](./IMG-3667.JPG)
